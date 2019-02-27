@@ -12,6 +12,7 @@ public class MyAlgorithm {
         // new PrintStar().printStar();
         // new PrintStar().printStar2();
         // new BasicSort().bubbleSort();
-        new BasicSort().selectionSort();
+        // new BasicSort().selectionSort();
+        new BasicSort().insertionSort();
     }
 }

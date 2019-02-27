@@ -35,4 +35,24 @@ public class BasicSort {
         
         System.out.println("after selectionSort " + Arrays.toString(arr));
     }
+    
+    public void insertionSort() {
+        int[] arr = {9,5,1,6,2};
+        
+        System.out.println("before"+Arrays.toString(arr));
+        for(int i=1; i<arr.length ; i++) {
+            int pointer = i;
+            int currentNum = arr[i];
+            for(int j=i-1 ; j>-1 ; j--) {
+                if(currentNum < arr[j]) {  //** currentNum
+                    pointer = j;
+                }else
+                    break; //** important
+            }
+            int temp = arr[pointer];
+            arr[pointer] = arr[i];
+            arr[i] = temp;
+        }
+                System.out.println("after insertionSort " + Arrays.toString(arr));
+    }
 }
